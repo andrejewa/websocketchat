@@ -32,6 +32,7 @@ public class ChatMessage implements Serializable {
             strategy = GenerationType.SEQUENCE,
             generator = "message_seq"
     )
+    @Column(name = "message_id")
     private Long id;
 
     private String content;

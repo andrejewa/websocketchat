@@ -29,6 +29,7 @@ public class ChatSender implements Serializable {
             strategy = GenerationType.SEQUENCE,
             generator = "sender_seq"
     )
+    @Column(name = "sender_id")
     private Long id;
 
     @Column(unique = true)
