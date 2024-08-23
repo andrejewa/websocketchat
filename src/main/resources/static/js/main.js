@@ -57,6 +57,7 @@ function createMessageUiItem(message) {
     usernameElement.appendChild(usernameText);
     var dateElement = document.createElement('span');
     dateElement.classList.add('date');
+    dateElement.classList.add('service-message');
     dateElement.textContent = message.date;
     usernameElement.appendChild(dateElement);
 
@@ -107,7 +108,7 @@ function onMessageReceived(payload) {
         message.content = message.user + ' joined!';
 
     } else if (message.type === 'USERS') {
-        var usersArea = document.getElementById('users-area');
+        var usersArea = document.getElementById('users-list');
         usersArea.innerHTML = '';
         var users = message.users;
         if (usersArea && Array.isArray(users)) {

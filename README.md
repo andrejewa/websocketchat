@@ -5,7 +5,7 @@ The app is a WebChat with WebSockets. The User prints his/her name, and then ent
 
 **RUN**
 
-First of all you are to set your environment variables in your .env file (or just copy from .env.default):
+First of all you are to set your environment variables in your .env file:
 ```
 DB_USERNAME=
 DB_PASSWORD=
@@ -16,6 +16,15 @@ APP_PORT=
 ```
 Then you can run the app:
 `mvn spring-boot:run`
+
+**QUICK START**
+
+Run the following commands in the project directory:
+
+```
+cp .env.default .env
+mvn spring-boot:run
+```
 
 **WEB**
 
